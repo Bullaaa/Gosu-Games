@@ -1,3 +1,5 @@
+#Note- Many lines in this code are not being used.
+
 require 'gosu'
 
 
@@ -15,16 +17,12 @@ class Wwin < Gosu::Window
 		#@background = Gosu::Image.new self, Gosu::Color.argb(0xff_ffffff)
 		#@rain = Rectangle.new(@ranx, @y)
 		@rains = Array.new(500)
-		flash = {}
+		#flash = {}
 	end
 
 
 	def update
-
-		
 		close if button_down? Gosu::KbEscape
-		
-		
 	end
 
 
@@ -37,7 +35,7 @@ class Wwin < Gosu::Window
 		#	@rain.draw
 		#end
  		#@rain.draw
- 		Gosu.draw_rect 0, 0, self.width, self.height, Gosu::Color::WHITE
+ 		#Gosu.draw_rect 0, 0, self.width, self.height, Gosu::Color::WHITE
  		#@background.draw 0, 0, 0
  		fall
 
